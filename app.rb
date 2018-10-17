@@ -1,7 +1,9 @@
-require 'sinatra'
+require 'sinatra/base'
 
-get '/named-cat' do
-  p params
-  @name = params[:name]
-  erb :index
+class Battle < Sinatra::Base
+  get '/' do
+    'Hello Battle!'
+  end
+
+  run! if app_file == $0
 end
