@@ -98,6 +98,8 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+  # add this to spec/spec_helper.rb
+
 ENV['RACK_ENV'] = 'test'
 
 # require our Sinatra app file
